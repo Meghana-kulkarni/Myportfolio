@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h2 class="logo">MyPortfolio</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Hello, I'm <span class="highlight">Meghana Kulkarni</span></h1>
+        <p class="subtitle">Web Developer | Designer | Programmer</p>
+        <button class="btn" onclick="scrollToSection('contact')">Hire Me</button>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Aspiring Web Developer with hands-on experience in building full-stack web applications using MERN and PHP-MySQL
+technologies. Currently working at Wipro as an Incident Manager under the WILP program, while pursuing M.Tech. Strong
+foundation in HTML, CSS, JavaScript, React, Node.js, and MySQL. Passionate about creating impactful digital solutions and
+transitioning into a full-time software development role.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-box">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Bootsrtap</div>
+            <div class="skill">Express.js</div>
+            <div class="skill">PHP</div>
+            <div class="skill">Mongo DB</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">GitHUB</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Placement Cell Web & Android App</h3>
+            <pre>                 • Developed a web application for managing student placements, including job posting, profile management, interview scheduling, and placement stats.
+                 • Tech Used: HTML, CSS, JavaScript, PHP, MySQL; Android app built using Java + Firebase.
+                 • Built admin dashboard and secure login for students and placement officers.</pre>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <pre>• Responsive personal portfolio built using HTML, CSS, and JavaScript.
+• Deployed on Netlify with project links and contact section</pre>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

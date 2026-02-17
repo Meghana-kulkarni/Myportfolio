@@ -2,101 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Meghana Kulkarni | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <h2 class="logo">MyPortfolio</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Navbar -->
+<header>
+    <nav>
+        <h2 class="logo">Meghana Kulkarni</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <img src="profile.jpg" alt="Meghana Kulkarni" class="profile-pic">
         <h1>Hello, I'm <span class="highlight">Meghana Kulkarni</span></h1>
-        <p class="subtitle">Web Developer | Designer | Programmer</p>
+        <p class="subtitle">Aspiring Full-Stack Web Developer</p>
         <button class="btn" onclick="scrollToSection('contact')">Hire Me</button>
-    </section>
+    </div>
+</section>
 
-    <!-- About -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I am an aspiring Full-Stack Web Developer with hands-on experience in MERN stack and PHP–MySQL. Currently working at Wipro under the WILP program, I collaborate with development and DevOps teams while gaining exposure to production systems. I enjoy building responsive web applications and continuously improving my technical skills. I am actively seeking entry-level Web Developer or Software Engineer roles.
-        </p>
-    </section>
+<!-- About -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am an aspiring Full-Stack Web Developer with hands-on experience in MERN stack and PHP–MySQL.
+        Currently working at Wipro under the WILP program, I collaborate with development and DevOps teams
+        while gaining exposure to production systems. I enjoy building responsive web applications and
+        continuously improving my technical skills.
+    </p>
+</section>
 
-    <!-- Skills -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skill-box">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">React</div>
-            <div class="skill">Node.js</div>
-            <div class="skill">Bootsrtap</div>
-            <div class="skill">Express.js</div>
-            <div class="skill">PHP</div>
-            <div class="skill">Mongo DB</div>
-            <div class="skill">MySQL</div>
-            <div class="skill">GitHUB</div>
-        </div>
-    </section>
+<!-- Experience -->
+<section id="experience" class="experience">
+    <h2>Experience</h2>
+    <div class="experience-card">
+        <h3>Wipro Technologies</h3>
+        <p><strong>Incident Manager (WILP Program)</strong> | May 2024 – Present</p>
+        <ul>
+            <li>Handling high-priority production incidents ensuring SLA compliance.</li>
+            <li>Coordinating with backend and DevOps teams during issue investigation.</li>
+            <li>Analyzing application logs and system alerts before escalation.</li>
+            <li>Maintaining incident documentation and reports.</li>
+        </ul>
+    </div>
+</section>
 
-    <!-- Projects -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
+<!-- Skills -->
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-box">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">Express.js</div>
+        <div class="skill">PHP</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">GitHub</div>
+    </div>
+</section>
 
-        <div class="project-card">
-            <h3>Placement Cell Web & Android App</h3>
-            <pre>  
-• Developed a placement management web application to manage student profiles, job postings, and interview schedules.
-• Implemented login functionality for students and placement officers.
-• Built admin features for managing placement-related data.
-• Technologies: HTML, CSS, JavaScript, PHP, MySQL; Android app using Java and Firebase
-</pre>
-        </div>
+<!-- Projects -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
 
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <pre>Created a responsive personal portfolio website to showcase projects and skills.
-• Included project details and contact information.
-• Deployed using GitHub.
-• Technologies: HTML, CSS, JavaScript</pre>
-        </div>
-        <div class="project-card">
-            <h3>Job Quest – Job Portal (Ongoing)</h3>
-            <pre>• Working on a MERN stack-based job portal application.
-• Implemented basic user authentication and job posting modules.
-• Focused on improving UI and integrating backend APIs.
-• Technologies: React.js, Node.js, Express.js, MongoDB</pre>
-        </div>
-    </section>
+    <div class="project-card">
+        <h3>Placement Cell Web & Android App</h3>
+        <ul>
+            <li>Developed a placement management system for student profiles and job postings.</li>
+            <li>Implemented authentication for students and placement officers.</li>
+            <li>Built admin dashboard for managing placement data.</li>
+            <li><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, MySQL, Java, Firebase</li>
+        </ul>
+    </div>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Message"></textarea>
-            <button type="submit" class="btn">Send</button>
-        </form>
-    </section>
+    <div class="project-card">
+        <h3>Job Quest – MERN Job Portal (Ongoing)</h3>
+        <ul>
+            <li>Developing a job portal using MERN stack.</li>
+            <li>Implemented user authentication and job posting modules.</li>
+            <li>Integrated frontend UI with backend APIs.</li>
+            <li><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB</li>
+        </ul>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <ul>
+            <li>Created a responsive portfolio website.</li>
+            <li>Showcased projects, skills, and contact details.</li>
+            <li>Deployed using GitHub Pages.</li>
+            <li><strong>Technologies:</strong> HTML, CSS, JavaScript</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-

@@ -1,29 +1,40 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: #f5f5f5;
+    background-color: #f8f9fc;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Navbar */
 header {
-    background: #fff;
-    padding: 15px 40px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
-    z-index: 100;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 10%;
+}
+
+.logo {
+    font-weight: 600;
+    color: #2c3e50;
 }
 
 nav ul {
@@ -32,198 +43,187 @@ nav ul {
     gap: 25px;
 }
 
-nav a {
+nav ul li a {
     text-decoration: none;
+    color: #444;
     font-weight: 500;
-    color: #333;
+    transition: 0.3s ease;
 }
 
-/* Mobile Navbar */
-nav ul.mobile {
-    display: none;
-}
-
-/* Hero Section */
-.hero {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, #007bff, #6bb1ff);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.hero h1 {
-    font-size: 3rem;
-}
-
-.highlight {
-    color: yellow;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-.btn {
-    background: #fff;
-    color: #007bff;
-    padding: 10px 25px;
-    border-radius: 6px;
-    margin-top: 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
+nav ul li a:hover {
+    color: #4e73df;
 }
 
 /* Sections */
 section {
-    padding: 60px 80px;
+    padding: 100px 10%;
+    margin-top: 60px;
 }
 
-section h2 {
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    color: white;
+    padding-top: 140px;
+    padding-bottom: 120px;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
     margin-bottom: 20px;
+    border: 4px solid white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.highlight {
+    color: #ffe082;
+}
+
+.subtitle {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: white;
+    color: #4e73df;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #2c3e50;
+    color: white;
 }
 
 /* About */
 .about p {
     max-width: 800px;
-    font-size: 1.1rem;
-    line-height: 1.6;
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Experience */
+.experience-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: auto;
+}
+
+.experience-card ul {
+    margin-top: 10px;
+    padding-left: 20px;
 }
 
 /* Skills */
 .skill-box {
     display: flex;
-    gap: 15px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 .skill {
-    background: #007bff;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.skill:hover {
+    background: #4e73df;
     color: white;
-    padding: 10px 18px;
-    border-radius: 5px;
-    font-weight: 600;
 }
 
 /* Projects */
 .project-card {
     background: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-left: 4px solid #007bff;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    font-size: 1rem;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
 }
 
-.project-card pre {
-    white-space: pre-wrap;
-    font-size: 1rem;
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-/* Contact Form */
+.project-card ul {
+    padding-left: 20px;
+}
+
+/* Contact */
 .contact form {
+    max-width: 600px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 500px;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
     padding: 12px;
-    border: 1px solid #aaa;
-    border-radius: 6px;
-    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: 0.3s ease;
 }
 
-.contact .btn {
-    width: 150px;
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #4e73df;
 }
 
-/* -------------------------------------------------- */
-/* 🔥 RESPONSIVE DESIGN SECTION */
-/* -------------------------------------------------- */
-
-/* Tablets (max width: 992px) */
-@media (max-width: 992px) {
-    nav ul {
-        gap: 15px;
-    }
-
-    section {
-        padding: 40px 40px;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero {
-        height: 70vh;
-    }
+.contact button {
+    align-self: center;
 }
 
-/* Mobile (max width: 768px) */
+/* Responsive */
 @media (max-width: 768px) {
-
-    header {
-        padding: 10px 20px;
+    nav {
+        flex-direction: column;
+        gap: 10px;
     }
 
     nav ul {
-        display: none; /* Hide desktop menu */
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    /* Mobile Menu Button */
-    nav::after {
-        content: "☰";
-        font-size: 28px;
-        cursor: pointer;
-    }
-
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .subtitle {
-        font-size: 1rem;
-    }
-
-    section {
-        padding: 40px 25px;
-    }
-
-    .project-card {
-        font-size: 0.95rem;
-    }
-
-    .project-card pre {
-        font-size: 0.9rem;
-    }
-}
-
-/* Very Small Mobiles (max width: 480px) */
-@media (max-width: 480px) {
 
     .hero h1 {
         font-size: 1.8rem;
     }
 
-    .btn {
-        padding: 8px 18px;
-    }
-
-    .skill {
-        padding: 8px 14px;
-    }
-
-    .about p {
-        font-size: 1rem;
+    section {
+        padding: 80px 5%;
     }
 }

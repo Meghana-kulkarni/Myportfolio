@@ -1,130 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Meghana Kulkarni | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meghana Kulkarni | Software Engineer</title>
+
+  <style>
+.contact-box {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: left;
+}
+
+.contact-box p {
+  margin: 10px 0;
+}
+
+.contact-box a {
+  color: #38bdf8;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 15px;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 100px 10%;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #ffffff;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 15px auto;
+      color: #94a3b8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      background: #38bdf8;
+      color: #000;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    /* ABOUT */
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: #cbd5f5;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    /* PROJECTS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #334155;
+    }
+
+    /* EXPERIENCE */
+    .experience {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<header>
-    <nav>
-        <h2 class="logo">Meghana Kulkarni</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+  <!-- HERO -->
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="hero-content">
-        <img src="resumephoto.jpeg" alt="Meghana Kulkarni" class="profile-pic">
-        <h1>Hello, I'm <span class="highlight">Meghana Kulkarni</span></h1>
-        <p class="subtitle">Aspiring Full-Stack Web Developer</p>
-        <button class="btn" onclick="scrollToSection('contact')">Hire Me</button>
-    </div>
-</section>
+  <section class="hero">
+    <h1>Meghana Kulkarni</h1>
+    <h3>Software Engineer | Full Stack Developer (MERN)</h3>
+    <p>
+      Building scalable applications and solving real-world problems through clean backend systems, efficient APIs, and strong debugging practices.
+    </p>
 
-<!-- About -->
-<section id="about" class="about">
+    <a href="projects.html" class="btn">View Projects</a>
+    <a href="@meghana--resume.pdf" class="btn">Download Resume</a>
+    <a href="#contact" class="btn">Contact Me</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
     <h2>About Me</h2>
     <p>
-        I am an aspiring Full-Stack Web Developer with hands-on experience in MERN stack and PHP–MySQL.
-        Currently working at Wipro under the WILP program, I collaborate with development and DevOps teams
-        while gaining exposure to production systems. I enjoy building responsive web applications and
-        continuously improving my technical skills.
+      Software Engineer with experience in building and debugging full-stack applications and managing real-time production systems at Wipro. Skilled in backend development, API design, and solving complex system issues efficiently.
+      <br><br>
+      Currently exploring Artificial Intelligence and Generative AI to build smarter, future-ready applications. Actively seeking Software Developer opportunities.
     </p>
-</section>
+  </section>
 
-<!-- Experience -->
-<section id="experience" class="experience">
-    <h2>Experience</h2>
-    <div class="experience-card">
-        <h3>Wipro Technologies</h3>
-        <p><strong>Incident Manager (WILP Program)</strong> | May 2024 – Present</p>
-        <ul>
-            <li>Handling high-priority production incidents ensuring SLA compliance.</li>
-            <li>Coordinating with backend and DevOps teams during issue investigation.</li>
-            <li>Analyzing application logs and system alerts before escalation.</li>
-            <li>Maintaining incident documentation and reports.</li>
-        </ul>
+  <!-- SKILLS -->
+  <section>
+    <h2 style="text-align:center;">Skills</h2>
+    <div class="skills">
+      <div class="skill">JavaScript</div>
+      <div class="skill">React.js</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Express.js</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">PHP</div>
+      <div class="skill">Git</div>
+      <div class="skill">REST APIs</div>
+      <div class="skill">Debugging</div>
     </div>
-</section>
+  </section>
 
-<!-- Skills -->
-<section id="skills" class="skills">
-    <h2>Skills</h2>
-    <div class="skill-box">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">React</div>
-        <div class="skill">Node.js</div>
-        <div class="skill">Bootstrap</div>
-        <div class="skill">Express.js</div>
-        <div class="skill">PHP</div>
-        <div class="skill">MongoDB</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">GitHub</div>
-    </div>
-</section>
+  <!-- PROJECTS -->
+  <section>
+    <h2 style="text-align:center;">Projects</h2>
 
-<!-- Projects -->
-<section id="projects" class="projects">
-    <h2>Projects</h2>
+    <div class="projects">
 
-    <div class="project-card">
-        <h3>Placement Cell Web & Android App</h3>
-        <ul>
-            <li>Developed a placement management system for student profiles and job postings.</li>
-            <li>Implemented authentication for students and placement officers.</li>
-            <li>Built admin dashboard for managing placement data.</li>
-            <li><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, MySQL, Java, Firebase</li>
-        </ul>
-    </div>
+      <div class="card">
+        <h3>Placement Cell System</h3>
+        <p>
+          Full-stack app to manage student placements, job postings, and interviews. Built APIs and optimized database performance.
+        </p>
+      </div>
 
-    <div class="project-card">
-        <h3>Job Quest – MERN Job Portal (Ongoing)</h3>
-        <ul>
-            <li>Developing a job portal using MERN stack.</li>
-            <li>Implemented user authentication and job posting modules.</li>
-            <li>Integrated frontend UI with backend APIs.</li>
-            <li><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB</li>
-        </ul>
-    </div>
+      <div class="card">
+        <h3>Job Quest (MERN)</h3>
+        <p>
+          Scalable job portal with authentication, job search, and role-based access.
+        </p>
+      </div>
 
-    <div class="project-card">
+      <div class="card">
         <h3>Portfolio Website</h3>
-        <ul>
-            <li>Created a responsive portfolio website.</li>
-            <li>Showcased projects, skills, and contact details.</li>
-            <li>Deployed using GitHub Pages.</li>
-            <li><strong>Technologies:</strong> HTML, CSS, JavaScript</li>
-        </ul>
+        <p>
+          Responsive portfolio showcasing projects and skills with clean UI.
+        </p>
+      </div>
+
     </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience">
+    <h2>Experience</h2>
+    <h3>Wipro Technologies – Incident Manager</h3>
+    <p>May 2024 – Present</p>
+    <ul>
+      <li>Managed high-priority production incidents</li>
+      <li>Debugged application issues using logs</li>
+      <li>Collaborated with backend teams</li>
+    </ul>
+  </section>
+<section id="contact" style="padding:60px 10%; text-align:center;">
+
+  <h2>Contact Me</h2>
+  <p style="color:#94a3b8; margin-bottom:20px;">
+    I'm actively seeking Software Developer opportunities. Feel free to reach out!
+  </p>
+
+  <div class="contact-box">
+
+    <p><strong>Email:</strong> 
+      <a href="mailto:meghanakulkarni2002@gmail.com">
+        meghanakulkarni2002@gmail.com
+      </a>
+    </p>
+
+    <p><strong>Phone:</strong> 
+      <a href="tel:+919353527727">
+        +91 93535 27727
+      </a>
+    </p>
+
+    <p><strong>LinkedIn:</strong> 
+      <a href="https://linkedin.com/in/meghana-kulkarni" target="_blank">
+        linkedin.com/in/meghana-kulkarni
+      </a>
+    </p>
+
+    <p><strong>GitHub:</strong> 
+      <a href="https://github.com/Meghana-kulkarni" target="_blank">
+        github.com/Meghana-kulkarni
+      </a>
+    </p>
+
+  </div>
+
 </section>
 
-<!-- Contact -->
-<section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Message" required></textarea>
-        <button type="submit" class="btn">Send</button>
-    </form>
-</section>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Meghana Kulkarni | Open to Software Developer Roles</p>
+  </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
-
-
